@@ -18,6 +18,7 @@ Lista de Dispositivos:
 - 7 Jumpers Macho/Macho;
 - 1 Sensor de Ultrassom HC-SR04;
 - 1 Micro Servo Motor de 9g;
+- Alguns elasticos e um pedaço de papel para criação da base.
 
 Todos os dispositivos usados neste vídeo você encontra no Kit de Arduino Iniciante V8 da Robocore neste Link: http://bit.ly/2UfXYvK
 
