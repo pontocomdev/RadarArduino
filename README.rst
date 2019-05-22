@@ -1,38 +1,26 @@
 
 
 ###################
-Faça sua Placa Contadora de Inscritos do Youtube em Tempo Real com Arduino Wemos ESP8266 (DIY)
+Criando um Radar Arduíno com monitoramento pelo PC
 ###################
 
-Neste vídeo vamos criar uma placa contadora de inscritos do Youtube um ótimo Gadget para quem tem um canal e deseja ficar motivado com seu crescimento.
+Neste vídeo vamos criar u protótipo de um Radar que ficará rastreando se objetos estão chegando próximos a ele e o resultado da sua varredura será mostrada em tela no Computador.
 
 *******************
-Link com instruções em vídeo: https://youtu.be/etRQlDA965I
+Link com instruções em vídeo: 
 *******************
 
 Lista de Dispositivos:
 
-- 1 Wemos D1 Mini;
-- 1 Display 20×4 LCD I2C;
-- 1 Protoboard para Testes; (Opcional)
-- 4 Jumpers;
-- 1 Cabo USB/Micro USB (para enviar o código para a Placa).
-- 1 PowerBank (Caso queira usar o dispositivo sem um carregador de celular).
+- 1 Arduíno Uno;
+- 1 Protoboard;
+- 4 Jumpers Macho/Femea;
+- 7 Jumpers Macho/Macho;
+- 1 Sensor de Ultrassom HC-SR04;
+- 1 Micro Servo Motor de 9g;
 
-Bibliotecas:
+Todos os dispositivos usados neste vídeo você encontra no Kit de Arduino Iniciante V8 da Robocore neste Link: http://bit.ly/2UfXYvK
 
-- Arduino JSON: https://github.com/bblanchon/ArduinoJson
-- Liquid Crystal para ESP8266: https://github.com/esp8266/Basic/tree/master/libraries/LiquidCrystal
- 
-Instalação do drive da Wemos D1 mini no Arduino:
-
-- Adicione este link nas preferências: http://arduino.esp8266.com/versions/2.3.0/package_esp8266com_index.json
-
-Opcionais:
-
-- 1 Quadro de Madeira;
-- Tinta para pintura;
-- Impressão da Arte do Canal;
 
 
 
