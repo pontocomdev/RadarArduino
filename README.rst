@@ -20,6 +20,8 @@ Lista de Dispositivos:
 - 1 Micro Servo Motor de 9g;
 - Alguns elasticos e um pedaço de papel para criação da base.
 
+Link para download do Processing: http://bit.ly/2K2JKx3
+
 Todos os dispositivos usados neste vídeo você encontra no Kit de Arduino Iniciante V8 da Robocore neste Link: http://bit.ly/2UfXYvK
 
 
