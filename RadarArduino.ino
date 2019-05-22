@@ -1,34 +1,34 @@
-// Includes the Servo library
+// Inclui a biblioteca Servo Motor
 #include <Servo.h>. 
 
-// Defines Tirg and Echo pins of the Ultrasonic Sensor
+// Define os pinos Trig e Echo do sensor ultrassônico
 const int trigPin = 10;
 const int echoPin = 11;
-// Variables for the duration and the distance
+// Variáveis para a duração e a distância
 long duration;
 int distance;
 
-Servo myServo; // Creates a servo object for controlling the servo motor
+Servo myServo; // Cria um objeto servo para controlar o servo motor
 
 void setup() {
-  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
-  pinMode(echoPin, INPUT); // Sets the echoPin as an Input
+  pinMode(trigPin, OUTPUT); 
+  pinMode(echoPin, INPUT);
   Serial.begin(9600);
-  myServo.attach(12); // Defines on which pin is the servo motor attached
+  myServo.attach(12); // Define em qual pino o Servo Motor está conectado
 }
 void loop() {
-  // rotates the servo motor from 15 to 165 degrees
+  // gira o Servo Motor de 15 a 165 graus
   for(int i=15;i<=165;i++){  
   myServo.write(i);
   delay(30);
-  distance = calculateDistance();// Calls a function for calculating the distance measured by the Ultrasonic sensor for each degree
+  distance = calculateDistance();// Chama uma função para calcular a distância medida pelo sensor ultrassônico para cada grau
   
-  Serial.print(i); // Sends the current degree into the Serial Port
-  Serial.print(","); // Sends addition character right next to the previous value needed later in the Processing IDE for indexing
-  Serial.print(distance); // Sends the distance value into the Serial Port
-  Serial.print("."); // Sends addition character right next to the previous value needed later in the Processing IDE for indexing
+  Serial.print(i); // Envia o grau atual para a porta serial
+  Serial.print(","); // Envia o caractere de adição ao lado do valor anterior necessário posteriormente no IDE de processamento para indexação
+  Serial.print(distance); // Envia o valor da distância para a porta serial
+  Serial.print("."); // Envia o caractere de adição ao lado do valor anterior necessário posteriormente no IDE de processamento para indexação
   }
-  // Repeats the previous lines from 165 to 15 degrees
+  // Repete as linhas anteriores de 165 a 15 graus
   for(int i=165;i>15;i--){  
   myServo.write(i);
   delay(30);
@@ -39,16 +39,16 @@ void loop() {
   Serial.print(".");
   }
 }
-// Function for calculating the distance measured by the Ultrasonic sensor
+// Função para calcular a distância medida pelo sensor ultrassônico
 int calculateDistance(){ 
   
   digitalWrite(trigPin, LOW); 
   delayMicroseconds(2);
-  // Sets the trigPin on HIGH state for 10 micro seconds
+  // Define o trigPin no estado HIGH por 10 micro segundos
   digitalWrite(trigPin, HIGH); 
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
-  duration = pulseIn(echoPin, HIGH); // Reads the echoPin, returns the sound wave travel time in microseconds
+  duration = pulseIn(echoPin, HIGH); // Lê o echoPin, retorna o tempo de viagem da onda sonora em microssegundos
   distance= duration*0.034/2;
   return distance;
 }
